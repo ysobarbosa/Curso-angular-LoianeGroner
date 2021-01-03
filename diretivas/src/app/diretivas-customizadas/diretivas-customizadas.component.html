@@ -1,0 +1,31 @@
+<p fundoAmareloDirective>Texto com fundo amarelo</p>
+
+<button fundoAmareloDirective>
+  Botão com o fundo amarelo
+</button>
+
+<p highlightMouseDirective>
+  Texto com highlight ao passar o mouse
+</p>
+
+<p [highlightDirective]="'red'" [defaultColor]="'grey'" >
+  Texto com highlight com cores customizadas
+</p>
+
+<h5>NgElse</h5>
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui
+  <!-- <li>{{cursos}}</li> -->
+</div>
+<div *ngElseDirective="mostrarCursos">
+  Não existem cursos para serem listados.
+</div>
+
+<button (click)="onMostrarCursos()">mostrar ou esconder cursos</button>
+
+<ng-template #name [ngElseDirective]="mostrarCursos">
+  <div>
+    Não existem cursos para serem listados
+  </div>
+</ng-template>
+
