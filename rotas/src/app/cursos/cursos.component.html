@@ -1,0 +1,8 @@
+<div class="collection">
+  <a href="#!" class="collection-item" 
+    *ngFor="let curso of cursos"
+    [routerLink]="['/cursos', curso.id]" routerLinkActive="router-link-active" >
+    {{curso.nome}}
+  </a>
+  
+</div>
