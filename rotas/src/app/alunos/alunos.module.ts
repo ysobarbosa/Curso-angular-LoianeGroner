@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Resolver } from 'dns';
 import { AlunosDeactvateGuard } from '../guards/aluno-deactivate.guard';
 import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 import { AlunoFormularioComponent } from './aluno-formulario/aluno-formulario.component';
